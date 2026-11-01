@@ -1,0 +1,22 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "ScopePlugin",
+  "Description": "Virtual Production shot save tool — collects scene parameters and POSTs JSON.",
+  "Category": "Virtual Production",
+  "CanContainContent": false,
+  "Plugins": [
+    { "Name": "CinematicCamera",      "Enabled": true, "Optional": true },
+    { "Name": "LiveLink",             "Enabled": true, "Optional": true },
+    { "Name": "nDisplay",             "Enabled": true, "Optional": true },
+    { "Name": "LevelSequenceEditor",  "Enabled": true, "Optional": true }
+  ],
+  "Modules": [
+    {
+      "Name": "ScopePlugin",
+      "Type": "Editor",
+      "LoadingPhase": "PostEngineInit"
+    }
+  ]
+}
